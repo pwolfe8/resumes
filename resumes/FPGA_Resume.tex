@@ -1,11 +1,92 @@
-\documentclass{article}
-\usepackage{import}
-\begin{document}
+\documentclass[11pt, a4paper]{article}
 
-% Import the experience document
+%%%% Package Imports %%%%
+
+% For importing bullet points from experience folder
+\usepackage{import}
+% For better handling of margins
+\usepackage[margin=0.4in]{geometry}
+% Enhanced support for graphics
+\usepackage{graphicx}
+% For URLs and clickable links
+\usepackage[hidelinks]{hyperref}
+% To adjust header and footer
+\usepackage{fancyhdr}
+% Better font encoding
+\usepackage[T1]{fontenc}
+% To handle multiple columns
+\usepackage{multicol}
+% For colors
+\usepackage{xcolor}
+% Package for custom section titles
+\usepackage{titlesec}
+% Package to handle lists
+\usepackage{enumitem}
+
+%%%% Styling, Imports, & Tools %%%%
+
+% Define colors for hyperlinks and sections
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.3}
+
+% import experience needed for this resume
 \import{../experience/}{fpga.tex}
 
-% Use the medium description
-\fpgaLong
+% Customize section headers format (Education, Experience, etc.)
+\titlespacing*{\section}{0pt}{2pt}{12pt}
+\titleformat{\section}{\large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+
+% Set up the page headers and footers
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} % No header rule
+\renewcommand{\footrulewidth}{0pt} % No footer rule
+\fancyfoot[C]{\thepage}
+\pagestyle{fancy}
+
+% list settings
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+% Personal information and header
+% example use: \header{Your Name}{email@example.com}{https://www.linkedin.com/in/yourprofile}{https://github.com/yourusername}{555-123-4567}{Custom LinkedIn Text}{Custom GitHub Text}
+\newcommand{\header}[7]{
+  \begin{center}
+    {\LARGE \bfseries\scshape #1}\\
+    \vspace{2mm}
+    \href{mailto:#2}{#2} $\cdot$ \href{#3}{#6} $\cdot$ \href{#4}{#7} $\cdot$ #5\\
+    \vspace{2mm}
+  \end{center}
+}
+
+%%%% Begin document %%%%
+\begin{document}
+
+% Insert header
+\header{Philip Wolfe}{pwolfe854@gmail.com}{https://www.linkedin.com/in/pwolfe854}{https://github.com/pwolfe8}{256-701-1047}{linkedin.com/in/pwolfe854}{github.com/pwolfe8}
+
+
+
+% Experience section
+\section*{Experience}
+\textbf{Job Title}, Company Name \textit{Month Year - Present}\\
+\begin{itemize}
+  \item Bullet point describing your job responsibility or achievement.
+  \item Another bullet point with more information.
+  \item \fpgaLong
+  
+\end{itemize}
+
+% Skills section
+\section*{Skills}
+\textbf{Languages:} C/C++, Python, Java\\
+\textbf{Technologies:} Git, Docker, AWS\\
+\textbf{Concepts:} Object-Oriented Programming, Machine Learning
+
+% Education section
+\section*{Education}
+{\small
+\textbf{GEORGIA INSTITUTE OF TECHNOLOGY, School of Electrical and Computer Engineering}\par
+\textbf{Masters of Science in Electrical and Computer Engineering}\par
+\textbf{Bachelor of Science in Computer Engineering with High Honors}\\
+\textbf{Interests:} Automation, Controls, Embedded Systems, Machine Learning, FPGAs/Digital Design
+}
 
 \end{document}
