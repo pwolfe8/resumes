@@ -1,3 +1,6 @@
+# ignore dsstore stuff too
+.DS_Store
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

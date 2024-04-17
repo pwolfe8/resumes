@@ -28,11 +28,12 @@
 % Define colors for hyperlinks and sections
 \definecolor{darkblue}{rgb}{0.0, 0.0, 0.3}
 
-% import experience needed for this resume
+% import experience needed for this resume & workplaces
 \import{../experience/}{fpga.tex}
+\import {../experience/}{workplaces.tex}
 
 % Customize section headers format (Education, Experience, etc.)
-\titlespacing*{\section}{0pt}{2pt}{12pt}
+\titlespacing*{\section}{0pt}{12pt}{12pt}
 \titleformat{\section}{\large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
 
 % Set up the page headers and footers
@@ -52,7 +53,7 @@
     {\LARGE \bfseries\scshape #1}\\
     \vspace{2mm}
     \href{mailto:#2}{#2} $\cdot$ \href{#3}{#6} $\cdot$ \href{#4}{#7} $\cdot$ #5\\
-    \vspace{2mm}
+    \vspace{0mm}
   \end{center}
 }
 
@@ -74,11 +75,7 @@
   
 \end{itemize}
 
-% Skills section
-\section*{Skills}
-\textbf{Languages:} C/C++, Python, Java\\
-\textbf{Technologies:} Git, Docker, AWS\\
-\textbf{Concepts:} Object-Oriented Programming, Machine Learning
+
 
 % Education section
 \section*{Education}
@@ -88,5 +85,11 @@
 \textbf{Bachelor of Science in Computer Engineering with High Honors}\\
 \textbf{Interests:} Automation, Controls, Embedded Systems, Machine Learning, FPGAs/Digital Design
 }
+
+% Skills section
+\section*{Skills}
+\textbf{Languages:} C/C++, Python, Java\\
+\textbf{Technologies:} Git, Docker, AWS\\
+\textbf{Concepts:} Object-Oriented Programming, Machine Learning
 
 \end{document}
