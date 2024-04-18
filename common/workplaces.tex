@@ -1,0 +1,30 @@
+%%%% Workplaces Formatting %%%%
+
+% Define a counter for selecting the formatting style
+\newcounter{workplaceformat}
+% Default format
+\setcounter{workplaceformat}{1}
+
+% Command to set the workplace format
+\newcommand{\setworkplaceformat}[1]{%
+    \setcounter{workplaceformat}{#1}
+}
+
+% General command for formatting
+\newcommand{\workplace}[2]{%
+    \ifnum\value{workplaceformat}=1
+        \noindent\textbf{#1} \hfill \textit{#2}\par\noindent % Format 1
+    \else
+        \noindent\textit{#1} -- \textbf{#2}\par\noindent % Format 2
+    \fi
+}
+
+%%%% Actual Workplaces %%%%
+
+\newcommand{\workplaceGTRI}{%
+    \workplace{Georgia Tech Research Institute}{2018 - 2023}
+}
+
+\newcommand{\workplaceBeam}{%
+\workplace{Beam Tech}{2023 - Present}
+}

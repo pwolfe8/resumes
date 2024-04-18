@@ -30,7 +30,7 @@
 
 % import experience needed for this resume & workplaces
 \import{../experience/}{fpga.tex}
-\import {../experience/}{workplaces.tex}
+\import {../common/}{workplaces.tex}
 
 % Customize section headers format (Education, Experience, etc.)
 \titlespacing*{\section}{0pt}{12pt}{12pt}
@@ -57,24 +57,31 @@
   \end{center}
 }
 
+% choose format for workplace titles (see experience/workplaces.tex for details)
+\setworkplaceformat{1}
+
 %%%% Begin document %%%%
 \begin{document}
 
 % Insert header
 \header{Philip Wolfe}{pwolfe854@gmail.com}{https://www.linkedin.com/in/pwolfe854}{https://github.com/pwolfe8}{256-701-1047}{linkedin.com/in/pwolfe854}{github.com/pwolfe8}
 
-
-
 % Experience section
 \section*{Experience}
-\textbf{Job Title}, Company Name \textit{Month Year - Present}\\
+
+\workplaceGTRI
 \begin{itemize}
-  \item Bullet point describing your job responsibility or achievement.
-  \item Another bullet point with more information.
+  \item \fpgaShort
+  \item \fpgaMedium
   \item \fpgaLong
-  
 \end{itemize}
 
+\workplaceBeam
+\begin{itemize}
+  \item \fpgaShort
+  \item \fpgaMedium
+  \item \fpgaLong
+\end{itemize}
 
 
 % Education section
