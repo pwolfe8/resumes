@@ -39,7 +39,7 @@
 \import {../common/}{publicity.tex}
 
 % Customize section headers format (Education, Experience, etc.)
-\titlespacing*{\section}{0pt}{12pt}{12pt}
+\titlespacing*{\section}{0pt}{4pt}{4pt}
 \titleformat{\section}{\large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
 
 % Set up the page headers and footers
@@ -66,7 +66,7 @@
 % choose format for workplace titles (see experience/workplaces.tex for details)
 \setworkplaceformat{1}
 
-%%%% Begin document %%%%
+%%%% BEGIN DOCUMENT %%%%
 \begin{document}
 
 % Insert header
@@ -89,20 +89,25 @@
   \item \fpgaLong
 \end{itemize}
 
-
-% Education section
-\educationSimple
-
 % Skills section
 \section*{Skills}
-\textbf{Languages:} C/C++, Python, Java\\
-\textbf{Technologies:} Git, Docker, AWS\\
-\textbf{Concepts:} Object-Oriented Programming, Machine Learning
+{\scriptsize
+    \textbf{Languages:} C/C++, Python, Java\\
+    \textbf{Technologies:} Git, Docker, AWS\\
+    \textbf{Concepts:} Object-Oriented Programming, Machine Learning\par
+}
+
+% Education section
+\section*{Education}
+{\scriptsize
+  \educationSimple
+}
 
 % Publications section
 \section*{Publications}
 {\scriptsize
-\publications
+  \publications
 }
 
+%%%% END DOCUMENT %%%%
 \end{document}
