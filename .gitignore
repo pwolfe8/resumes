@@ -1,6 +1,9 @@
 # ignore dsstore stuff too
 .DS_Store
 
+# ignore files ending in SAVE-ERROR
+*SAVE-ERROR
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

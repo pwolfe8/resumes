@@ -22,6 +22,10 @@
 \usepackage{titlesec}
 % Package to handle lists
 \usepackage{enumitem}
+% For bibliography
+\usepackage[style=numeric,sorting=none]{biblatex} % Optional, for automated bibliography
+% for hyperlinks
+\usepackage{hyperref}
 
 %%%% Styling, Imports, & Tools %%%%
 
@@ -32,6 +36,7 @@
 \import{../experience/}{fpga.tex}
 \import {../common/}{workplaces.tex}
 \import {../common/}{education.tex}
+\import {../common/}{publicity.tex}
 
 % Customize section headers format (Education, Experience, etc.)
 \titlespacing*{\section}{0pt}{12pt}{12pt}
@@ -93,5 +98,11 @@
 \textbf{Languages:} C/C++, Python, Java\\
 \textbf{Technologies:} Git, Docker, AWS\\
 \textbf{Concepts:} Object-Oriented Programming, Machine Learning
+
+% Publications section
+\section*{Publications}
+{\scriptsize
+\publications
+}
 
 \end{document}
