@@ -48,7 +48,9 @@
 \renewcommand{\headrulewidth}{0pt} % No header rule
 \renewcommand{\footrulewidth}{0pt} % No footer rule
 \fancyfoot[C]{\thepage}
-\pagestyle{fancy}
+\pagestyle{empty}
+
+
 
 % list settings
 \setlist[itemize]{noitemsep, topsep=0pt}
@@ -65,20 +67,41 @@
 
 % Experience section
 \section*{Experience}
+{\scriptsize
 
-\workplaceGTRI
-\begin{itemize}
-  \item \fpgaShort
-  \item \fpgaMedium
-  \item \fpgaLong
-\end{itemize}
+  \workplaceBeam
 
-\workplaceBeam
-\begin{itemize}
-  \item \fpgaShort
-  \item \fpgaMedium
-  \item \fpgaLong
-\end{itemize}
+  \workplaceGTRI
+  \begin{itemize}
+    \item FPGA: Demonstrated proof of concept for dynamically reconfigurable ALU using partial reconfiguration on Xilinx Kintex Ultrascale, laying groundwork for dynamic ML accelerator to adapt to changing needs
+    \item Gimbal: both ground and aerial based gimbal work at various precisions for tracking various targets on both COTS gimbals and custom. developed firmware control system for high precision gimbal with direct drive BLDC’s (space vector modulation, field oriented control, velocity control, position reference curve shaping)
+    \item Software: modified Python QT GUI to use a library I made for interfacing with custom gimbal firmware. Added several skins that could be dynamically loaded to change look \& feel for different needs
+    \item Embedded: Pixhawk custom firmware for point and shoot GPS finder, custom gimbal firmware, debug people's radio/RF problems, debug people's networking problems, review board designs
+    \item Embedded Linux: realtime ML video acceleration with gstreamer + deepstream SDK. designed multitudes of video streaming architectures optimized for low latency \& acceptable accurate. Setup Docker deployment to x86 \& ARM 
+    \item Leadership/Project Management: wrote proposal, got funded, designed tests, led team, successfully executed, and published remotely-operated underwater
+  welding robotics imagery study
+  \end{itemize}
+
+  \workplaceModernComputing
+
+  \workplaceClappingDetector
+
+  \workplaceDSPFPGA
+
+  \workplaceEmotionSpeech
+  \experienceEmotionSpeechLong
+
+  \workplaceSeniorDesign
+  
+  \workplaceDDL
+
+  \workplaceVLSI
+
+  \workplaceMLforT
+  
+  \workplaceConvexMind
+
+}
 
 % Skills section
 \section*{Skills}
@@ -88,14 +111,14 @@
   \begin{itemize}[noitemsep] % This removes the space between items
     \item C/C++: Unit and functional testing, Development on a variety of embedded processors/microcontrollers, Multithreading, Scheduling
     \item Python: machine learning, web socket servers/networking, automated firmware testing, live plotting of serial data
-    \item Networking: configuring subnets, dhcp servers, scripts to automate testing between common configurations across multiple OSes
-    \item Assembly: MIPS \& ARM Assembly Experience, Robot Navigation, String Pattern Searching
+    \item Networking: configuring subnets, dhcp servers, scripts to automate testing between common configurations across multiple OSes, DNS
+    \item Assembly: MIPS \& ARM Assembly Experience, String Pattern Searching
     \item MATLAB: Control System Simulation, Filter Design, Image/Audio Processing, GUI Development, Graph Animation, Data Visualization
   \end{itemize}
   % Other Skills
   \textbf{Lab Skills:} Debugging techniques, multimeter, soldering, oscilloscope, logic analyzer, function generator, datasheet interpretation\\
   \textbf{Controls:} Linear state space, digital controls, optimal controls; nonlinear controls\\
-  \textbf{Other:} Linux, Vim, C\#/NET, Keil, LTSpice, Multisim, Solidworks, Onshape, Cadence Virtuoso, KiCAD, ADS, CST, Verilog, VHDL\par\noindent
+  \textbf{Other:} Linux, Vim, C\#/.NET, Keil, LTSpice, Multisim, ModelSim, SolidWorks, Onshape, Cadence Virtuoso, KiCAD, Verilog, VHDL\par\noindent
 }
 
 % Education section

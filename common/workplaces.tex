@@ -19,12 +19,97 @@
     \fi
 }
 
-%%%% Actual Workplaces %%%%
+%%%% Workplaces %%%%
 
 \newcommand{\workplaceGTRI}{%
-    \workplace{Georgia Tech Research Institute}{2018 - 2023}
+    \workplace{Georgia Tech Research Institute - Research Engineer}{2018 - 2023}
+}
+
+\newcommand{\workplaceDDL}{%
+    \workplace{Autonomous Robot Path Navigation \& Wireless Communication using Altera DE2 FPGA}{Spring 2015}
+    \begin{itemize}
+        \item Added extra assembly instruction that interfaces with a UART to a simple computer ISA configured on an FPGA with VHDL.
+        \item Designed buffer system to queue incoming bytes from UART, received via Wifi.
+        \item Translated data into interpretable coordinates for a wireless pick-up drop-off robot delivery system \& implemented successful path algorithm for minimal error during traversal to coordinates.
+    \end{itemize}
+}
+
+\newcommand{\workplaceVLSI}{%
+    \workplace{VLSI Design}{Fall 2015}
+    \begin{itemize}
+        \item Developed 32-bit fast adder with branch predicition and carry lookahead in Cadence Virtuoso optimized for area and speed
+    \end{itemize}
+}
+
+\newcommand{\workplaceDSPFPGA}{%
+\workplace{DSP FPGA Classes}{Spring 2016}
+    \begin{itemize}
+        \item sobel filter edge detection, GPS message parsing, and butterfly Fast-Fourier Transform (FFT)
+    \end{itemize}
+}
+
+\newcommand{\workplaceModernComputing}{%
+    \workplace{Neural Network Hardware Acceleration}{Spring 2017}
+    \begin{itemize}
+        \item Designed a recurrent neural net using Verilog on a DE10Nano board (Cyclone V SoC)
+    \end{itemize}
+}
+
+\newcommand{\workplaceClappingDetector}{%
+    \workplace{Clapping Pattern Detection/Rejection using Artix-7 FPGA on Basys3 board}{Fall 2017}
+    \begin{itemize}
+        \item Developed a real-time clapping pattern detector using VHDL on a Xilinx Artix-7 FPGA and a microphone
+        \item Normalized over-time to detect pattern regardless of clapping rate
+    \end{itemize}
+}   
+
+\newcommand{\workplaceEmotionSpeech}{%
+    \workplace{Emotion Recognition from Speech}{Spring 2017}
+}
+
+\newcommand{\experienceEmotionSpeechShort}{
+    \begin{itemize}
+        \item Classified emotion from human speech as happy, sad, angry, or neutral using Python (Tensorflow \& Keras)
+    \end{itemize}
+}
+\newcommand{\experienceEmotionSpeechLong}{
+    \begin{itemize}
+        \item Classified emotion from human speech as happy, sad, angry, or neutral using Python (Tensorflow \& Keras)
+        \item Pre-Processed data for neural-net training on a dataset from USC of labeled emotions from an acted scene
+        \item Used scikit-learn to do random forest classification and ended up with better results than the neural net approach
+    \end{itemize}
+}
+
+
+\newcommand{\workplaceSeniorDesign}{%
+    \workplace{Senior Design: Analog Synthesizer using Field Programmable Analog Array}{Spring 2016}
+    \begin{itemize}
+        \item Our team developed an analog music synthesizer on a Field Programmable Analog Array for 1/3 market price, powered off USB.
+        \item Developed audio plugin compatible with most digital audio workstations with modern-looking GUI that parsed incoming MIDI, mapped notes to control messages sent over serial to a microcontroller controlling the FPAA.
+        \item Parsed messages, clamped the voltage range for FPAA inputs, and controlled ring oscillator’s frequency, waveform shape, \& volume.
+    \end{itemize}
+}
+
+\newcommand{\workplaceMLforT}{%
+    \workplace{Machine Learning for Trading}{Summer 2017}
+    \begin{itemize}
+        \item Trained BAG learner (bootstrap aggregation) to improve accuracy of a model with high bias (decision trees)
+        \item Evaluated boosting to improve accuracy, specifically AdaBoost (adaptive boost) which is an ensemble method that weighs poorer performing individual learners of the ensemble
+        \item Built a AI trader that chose when to buy, hold, or sell Apple stocks using reinforcement learning: Q-learning, and Dyna-Q (Q-learning with hallucination)
+    \end{itemize}
+}
+
+\newcommand{\workplaceConvexMind}{%
+    \workplace{ConvexMind Inc. - Co-Founder}{2017 - 2019}
+    \begin{itemize}
+        \item Co-founded startup that makes games for children age 2-6 with games to help them learn, and provides parents with data analytics to give them more insight on what their children are interested/how to help improve their rate of learning
+        \item Implemented mechanics to create a product that dynamically adapts to the child based on their choices using Unity game engine deployed on Android
+    \end{itemize}
 }
 
 \newcommand{\workplaceBeam}{%
-\workplace{Beam Tech}{2023 - Present}
+    \workplace{Beam Tech, Inc. - Robotics Systems Architect}{2022 - Present}
+    \begin{itemize}
+        \item Designing \& Implementing many many things including but not limited to PCB design, firmware, motion control, edge computing, signal processing, backend + frontend web dev, gimbal design, devops, and more
+    \end{itemize}
 }
