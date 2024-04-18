@@ -33,10 +33,11 @@
 \definecolor{darkblue}{rgb}{0.0, 0.0, 0.3}
 
 % import experience needed for this resume & workplaces
-\import{../experience/}{fpga.tex}
+\import {../common/}{header.tex}
 \import {../common/}{workplaces.tex}
 \import {../common/}{education.tex}
 \import {../common/}{publicity.tex}
+\import{../experience/}{fpga.tex}
 
 % Customize section headers format (Education, Experience, etc.)
 \titlespacing*{\section}{0pt}{4pt}{4pt}
@@ -52,25 +53,15 @@
 % list settings
 \setlist[itemize]{noitemsep, topsep=0pt}
 
-% Personal information and header
-% example use: \header{Your Name}{email@example.com}{https://www.linkedin.com/in/yourprofile}{https://github.com/yourusername}{555-123-4567}{Custom LinkedIn Text}{Custom GitHub Text}
-\newcommand{\header}[7]{
-  \begin{center}
-    {\LARGE \bfseries\scshape #1}\\
-    \vspace{2mm}
-    \href{mailto:#2}{#2} $\cdot$ \href{#3}{#6} $\cdot$ \href{#4}{#7} $\cdot$ #5\\
-    \vspace{0mm}
-  \end{center}
-}
-
 % choose format for workplace titles (see experience/workplaces.tex for details)
 \setworkplaceformat{1}
+
 
 %%%% BEGIN DOCUMENT %%%%
 \begin{document}
 
 % Insert header
-\header{Philip Wolfe}{pwolfe854@gmail.com}{https://www.linkedin.com/in/pwolfe854}{https://github.com/pwolfe8}{256-701-1047}{linkedin.com/in/pwolfe854}{github.com/pwolfe8}
+\headerSimple
 
 % Experience section
 \section*{Experience}
@@ -92,9 +83,19 @@
 % Skills section
 \section*{Skills}
 {\scriptsize
-    \textbf{Languages:} C/C++, Python, Java\\
-    \textbf{Technologies:} Git, Docker, AWS\\
-    \textbf{Concepts:} Object-Oriented Programming, Machine Learning\par
+  % Software Skills
+  \textbf{Software:}
+  \begin{itemize}[noitemsep] % This removes the space between items
+    \item C/C++: Unit and functional testing, Development on a variety of embedded processors/microcontrollers, Multithreading, Scheduling
+    \item Python: machine learning, web socket servers/networking, automated firmware testing, live plotting of serial data
+    \item Networking: configuring subnets, dhcp servers, scripts to automate testing between common configurations across multiple OSes
+    \item Assembly: MIPS \& ARM Assembly Experience, Robot Navigation, String Pattern Searching
+    \item MATLAB: Control System Simulation, Filter Design, Image/Audio Processing, GUI Development, Graph Animation, Data Visualization
+  \end{itemize}
+  % Other Skills
+  \textbf{Lab Skills:} Debugging techniques, multimeter, soldering, oscilloscope, logic analyzer, function generator, datasheet interpretation\\
+  \textbf{Controls:} Linear state space, digital controls, optimal controls; nonlinear controls\\
+  \textbf{Other:} Linux, Vim, C\#/NET, Keil, LTSpice, Multisim, Solidworks, Onshape, Cadence Virtuoso, KiCAD, ADS, CST, Verilog, VHDL\par\noindent
 }
 
 % Education section

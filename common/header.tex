@@ -1,0 +1,24 @@
+% Personal information and header
+% example use: \header{Your Name}{email@example.com}{https://www.linkedin.com/in/yourprofile}{https://github.com/yourusername}{555-123-4567}{Custom LinkedIn Text}{Custom GitHub Text}
+\newcommand{\header}[7]{
+    {
+      \centering
+
+      {\Huge \bfseries\scshape #1}\\
+      \vspace{2mm}
+      {\footnotesize
+      
+      \href{#3}{#6} % linkedin
+      $\cdot$
+      \href{#4}{#7} % github
+      $\cdot$
+      \href{mailto:#2}{#2} % email
+      $\cdot$
+      #5\\  % phone number
+      }
+    }
+}
+
+\newcommand{\headerSimple}{
+    \header{Philip Wolfe}{pwolfe854@gmail.com}{https://www.linkedin.com/in/pwolfe854}{https://github.com/pwolfe8}{256-701-1047}{linkedin.com/in/pwolfe854}{github.com/pwolfe8}
+}
