@@ -13,9 +13,9 @@
 % General command for formatting
 \newcommand{\workplace}[2]{%
     \ifnum\value{workplaceformat}=1
-        \noindent\textbf{#1} \hfill \textit{#2}\par\noindent % Format 1
+        \noindent\textbf{#1}\par\noindent % Format 1 no dates
     \else
-        \noindent\textit{#1} -- \textbf{#2}\par\noindent % Format 2
+        \noindent\textbf{#1} \hfill \textit{#2}\par\noindent % Format 2 with dates
     \fi
 }
 
